@@ -1,4 +1,9 @@
 
 body {
   margin: 0;
+  height: 100vh;
+  background: hsla(202, 72%, 17%, 1);
+  background: linear-gradient(290deg, hsla(202, 72%, 17%, 0.9) 34%, hsla(202, 15%, 50%, 1) 100%);
+  background: -moz-linear-gradient(290deg, hsla(202, 72%, 17%, 0.9) 34%, hsla(202, 15%, 50%, 1) 100%);
+  background: -webkit-linear-gradient(290deg, hsla(202, 72%, 17%, 0.9) 34%, hsla(202, 15%, 50%, 1) 100%);
 }
