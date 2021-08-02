@@ -1,0 +1,20 @@
+.homePage{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1rem;
+  padding: 0.5rem;
+  padding-bottom:0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.homePage__content{}
+.homePage__image{
+}
+.image__hero{
+  border-radius: 20px;
+  max-width: 100%;
+  height:auto;
+  box-shadow: 0 0.1em 1em 0 rgb(0 0 0 / 40%);
+}
+.content__headline{}

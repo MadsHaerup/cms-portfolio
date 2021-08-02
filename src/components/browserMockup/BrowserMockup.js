@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './BrowserMockup.css';
 
 export default function BrowserMockup() {
   return (
 <div class="browser-mockup browser-mockup--quick-start">
-  <code>
+<code>
   &lbrace;<br/>
     &nbsp;&nbsp;title: "A Wonderful Blog Post About Earth",<br/>
     &nbsp;&nbsp;slug: "a-wonderful-blog-post-about-earth",<br/>

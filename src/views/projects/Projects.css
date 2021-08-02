@@ -1,0 +1,8 @@
+.projects{
+  padding:2rem;
+}
+.projects__singleProject{
+  display: grid;
+  position: relative;
+  /* grid-template-columns: 50% 50%; */
+}

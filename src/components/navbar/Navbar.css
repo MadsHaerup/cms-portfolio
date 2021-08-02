@@ -2,8 +2,13 @@ ul{
   display: flex;
   list-style: none;
 }
-a{
-  color:#fff;
-  text-decoration: none;
+li{
   padding-right: 1.4rem;
+}
+a{
+  text-decoration: none;
+  font-family: 'VT323', monospace;
+}
+a:hover{
+  border-bottom:2px solid var(--hover-color);
 }
