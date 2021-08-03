@@ -9,6 +9,15 @@ export default function Projects() {
         <BrowserMockup/>
         <SingleProject title="A Sports app landingpage" website="https://elegant-nightingale-b0dfbe.netlify.app/" />
       </article>
+
+      <article className="projects__singleProject">
+        <div className="gridlayout">
+        <BrowserMockup/>
+        </div>
+        <div className="gridlayoutTwo">
+        <SingleProject title="A Sports app landingpage" website="https://elegant-nightingale-b0dfbe.netlify.app/" />
+        </div>
+      </article>
     </section>
   )
 }

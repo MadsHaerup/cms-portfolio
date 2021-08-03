@@ -14,7 +14,8 @@
   border-radius: 6px;
   min-height: 200px;
   background: #0C344B;
-  max-width: 250px;
+  width: 220px;
+  grid-area: 1/1/6/5;
 }
 *, :after, :before {
   -webkit-box-sizing: border-box;

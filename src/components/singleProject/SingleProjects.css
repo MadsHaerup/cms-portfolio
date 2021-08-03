@@ -2,12 +2,9 @@
   border:none;
   border-radius: 6px;
   background-color: #fff;
-  position: absolute;
-    top: 12%;
-    right: 18%;
-    width: 50%;
-    box-shadow: 0 0.1em 1em 0 rgb(0 0 0 / 40%);
-}
-.projectFrame > html{
-  zoom: 0.3;
+  box-shadow: 0 0.1em 1em 0 rgb(0 0 0 / 40%);
+  grid-area: 2/3/7/5;
+  z-index: 2;
+  transform: scale(0.75);
+  width:330px
 }
