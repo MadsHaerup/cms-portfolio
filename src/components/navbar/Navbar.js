@@ -2,13 +2,19 @@ import React from 'react';
 import { NavbarData } from './NavbarData'; 
 import {Link} from '@reach/router';
 import './Navbar.css';
+import { motion } from 'framer-motion';
 
 export default function Navbar() {
   return (
     <nav>
-      <ul>
+      <ul className="navigationItems">
         {NavbarData.map((item)=>(
-          <li key={item.id} ><Link to={item.path}>{item.title}</Link></li>
+          <motion.li key={item.id}
+          className="navigationsItems__item" 
+          whileHover={{scale:1.3, originX: 0, color: 'var(--hover-color)'}}
+          transition={{type: 'spring', stiffness: 250}}
+          >
+          <Link to={item.path}>{item.title}</Link></motion.li>
         ))}
       </ul>
       

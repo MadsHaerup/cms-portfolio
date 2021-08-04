@@ -1,23 +1,18 @@
 import { Router } from "@reach/router";
-import BlogPost from "./components/blogPost/BlogPost";
-import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
-import Blog from "./views/blog/Blog";
-import HomePage from "./views/homepage/HomePage";
-import Projects from "./views/projects/Projects";
+import Person from "./components/person/Person";
+import SoMe from "./components/soMe/SoMe";
 require('dotenv').config();
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      <SoMe/>
+
+      <Person/>
       <Router>
-        <HomePage path="/"/>
-        <Projects path="projects" />
-        <Blog path="blog" />
-        <BlogPost path="blogpost/:id" />
       </Router>
-      <Footer/>
      
     </div>
   );
