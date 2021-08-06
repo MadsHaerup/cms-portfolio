@@ -1,40 +1,40 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import BlogSummary from '../../components/blogPost/BlogSummary';
+import BlogLayout from '../../components/blogLayout/BlogLayout';
+import BlogPost from '../../components/blogPost/BlogPost';
 require('dotenv').config();
 export default function Blog() {
 
+  var urlPath = window.location.pathname;
+  var splitUrlPath = urlPath.split("/");
+
   const cosmicBucketSlug = process.env.REACT_APP_cosmicBucketSlug;
   const cosmicReadKey = process.env.REACT_APP_cosmicReadKey;
-  const BlogID = process.env.REACT_APP_BlogID;
 
-  const [headline, setHeadline] = useState([]);
-  const [summary, setSummary] = useState([]);
-  const [id, setId] = useState([]);
-  const [author, setAuthor] = useState([]);
-  const [date, setDate] = useState([]);
-
+  const [items, setItems] = useState([]);
+ 
   useEffect(() => {
     async function FetchContent () {
-        const req = await axios.get(`https://api.cosmicjs.com/v2/buckets/${cosmicBucketSlug}/objects/${BlogID}?pretty=true&read_key=${cosmicReadKey}&props=slug,metadata,`)
-        const response = await req.data;
-        setHeadline(response.object.metadata.blog_headline)
-        setSummary(response.object.metadata.blog_summary)
-        setDate(response.object.metadata.date)
-        setAuthor(response.object.metadata.author)
-        setId(response.object.slug)
-        // setImg(response.object.metadata.image.url)
+      try{
+        const response = await axios.get(`https://api.cosmicjs.com/v2/buckets/${cosmicBucketSlug}/objects/${splitUrlPath[2]}?pretty=true&read_key=${cosmicReadKey}&props=slug,metadata,`)
+        const data = await response.data.object.metadata;
         console.log(response)
-        return response;
-
+        setItems(data)
+        return data;
+      }catch(error){
+        console.log("error", error)
+      }
     }
     FetchContent();
-    }, [setSummary, setHeadline, setAuthor, setDate, setId])
+    }, [])
     
   return (
-    <section>
-      <BlogSummary headline={headline} summary={summary} id={id} date={date} author={author} />
-      
-    </section>
+    <BlogLayout>
+      <BlogPost 
+      headline={items.blog_headline} 
+      date={items.date} 
+      author={items.author} 
+      content={items.content} />
+    </BlogLayout>
   )
 }

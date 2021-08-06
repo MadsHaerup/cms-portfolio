@@ -2,18 +2,16 @@ import React from 'react';
 import Pb from '../../assets/img/pb.png';
 import {motion, transform} from 'framer-motion';
 import Headline from '../headline/Headline';
+import './Person.css';
 export default function Person() {
   return (
     <>
     <Headline/>
-    <div
+    <div className="contentContainer"
     style={{display: "grid", width: "600px", margin:"0 auto", position: "relative", height: "100vh"}}
     >
-  
-
       <motion.img src={Pb} alt="" width="600"
       style={{position: "absolute", top:0, left:0, zIndex: 100 }} 
-      animate={{}}
       />
       <motion.img src={Pb} alt="" width="600"
       style={{position: "absolute", top:0, left:0, zIndex: 5}}

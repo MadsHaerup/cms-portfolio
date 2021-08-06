@@ -7,7 +7,7 @@ nav{
   list-style: none;
 }
 .navigationsItems__item{
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .navigationsItems__item > a{
   text-decoration: none;

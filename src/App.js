@@ -1,7 +1,9 @@
 import { Router } from "@reach/router";
 import Navbar from "./components/navbar/Navbar";
-import Person from "./components/person/Person";
 import SoMe from "./components/soMe/SoMe";
+import AllBlogs from "./views/blog/AllBlogs";
+import Blog from "./views/blog/Blog";
+import HomePage from "./views/homepage/HomePage";
 require('dotenv').config();
 
 function App() {
@@ -9,9 +11,12 @@ function App() {
     <div className="App">
       <Navbar/>
       <SoMe/>
-
-      <Person/>
+  
       <Router>
+        <HomePage path="/" />
+        
+        <AllBlogs path="blog" />
+        <Blog path="blog/:id" />
       </Router>
      
     </div>
