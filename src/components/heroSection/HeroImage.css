@@ -1,0 +1,8 @@
+.heroContainer{
+  transform: perspective(200px) rotateY(-3deg);
+  display: grid; 
+  max-width: 600px;
+  margin: 0 auto; 
+  position: relative;
+
+}

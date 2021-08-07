@@ -1,17 +1,20 @@
-import Person from '../../components/person/Person';
-import ProjectSection from '../../components/projectSection/ProjectSection';
+import HeroImage from '../../components/heroSection/HeroImage';
+import Projects from '../../components/projects/Projects';
 import './HomePage.css';
+import Headline from '../../components/headline/Headline';
 
 export default function HomePage() {
 
   return (
     <div className="homePage">
-      <div>
-      <Person/>
-      </div>
-      <div>
-        {/* <ProjectSection/> */}
-      </div>
+      <Headline/>
+      <section>
+        <HeroImage/>
+      </section>
+
+      <section>
+        <Projects />
+      </section>
     </div>
   )
 }

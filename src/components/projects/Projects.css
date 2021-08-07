@@ -1,19 +1,16 @@
-.projects{
+.projectContainer{
   padding:2rem;
 }
-.projects__singleProject{
+.projectContainer__item{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto;
 }
-
-.gridlayout{
+/* .projectContainer :nth-child(odd){
   grid-area: 1/5/6/-1;
-
 }
-.gridlayoutTwo{
+.projectContainer :nth-child(even){
   grid-area: 2/1/7/3;
-
-}
+} */
