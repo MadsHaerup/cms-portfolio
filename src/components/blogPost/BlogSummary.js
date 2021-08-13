@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function BlogSummary({headline, summary, id, date, author}) {
 
   return (
-    <Link to={`${window.location.pathname}/${id}`} key={id}>
+    <Link to={`${window.location.pathname}/${id}`} key={id} className="blogLink">
     <motion.article className="blogSummary" 
     whileHover={{ scale: 0.95}}
     transition={{type: 'spring', stiffness: 150}}
