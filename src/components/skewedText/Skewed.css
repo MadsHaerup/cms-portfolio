@@ -1,0 +1,26 @@
+
+.skewed{
+  text-align: right;
+  transform: rotate3d(-1, 1, 0, -45deg);
+  transform-style: preserve-3d;
+  will-change: transform;
+  font-size: 6vw;
+  transition: transform 1.5s cubic-bezier(.075,.82,.165,1);
+  padding-right:1rem;
+}
+
+.skewed:hover, .skewed >h1:hover{
+  transform: rotate3d(0, 1, 0, 0deg);
+  transition-duration:1s;
+  color: transparent;
+  -webkit-text-stroke: 2px #151515;
+  transform-style: preserve-3d;
+}
+
+@media screen and (max-width:700px) {
+  .skewed{
+    grid-column: 1 / span 2;
+    z-index: 10;
+    grid-area:1/1/-1/-1;
+  }
+}

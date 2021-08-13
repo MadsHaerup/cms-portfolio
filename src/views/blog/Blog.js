@@ -3,10 +3,7 @@ import React, { useEffect, useState } from 'react';
 import BlogLayout from '../../components/blogLayout/BlogLayout';
 import BlogPost from '../../components/blogPost/BlogPost';
 require('dotenv').config();
-export default function Blog() {
-
-  var urlPath = window.location.pathname;
-  var splitUrlPath = urlPath.split("/");
+export default function Blog({id}) {
 
   const cosmicBucketSlug = process.env.REACT_APP_cosmicBucketSlug;
   const cosmicReadKey = process.env.REACT_APP_cosmicReadKey;
@@ -16,7 +13,7 @@ export default function Blog() {
   useEffect(() => {
     async function FetchContent () {
       try{
-        const response = await axios.get(`https://api.cosmicjs.com/v2/buckets/${cosmicBucketSlug}/objects/${splitUrlPath[2]}?pretty=true&read_key=${cosmicReadKey}&props=slug,metadata,`)
+        const response = await axios.get(`https://api.cosmicjs.com/v2/buckets/${cosmicBucketSlug}/objects/${id}?pretty=true&read_key=${cosmicReadKey}&props=slug,metadata,`)
         const data = await response.data.object.metadata;
         console.log(response)
         setItems(data)

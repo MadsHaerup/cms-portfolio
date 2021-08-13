@@ -17,3 +17,6 @@ body {
 h1,h2,h3,h4,h5,h6, a{
   color:var(--main-text-color);
 }
+h1,h2{
+  font-size: clamp(2rem, -0.875rem + 10vw, 10rem);
+}

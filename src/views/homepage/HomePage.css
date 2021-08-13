@@ -1,9 +1,14 @@
 .homePage{
   display: grid;
-  max-width: 1100px;
-  margin: 0 auto;
+  /* max-width: 1100px;
+  margin: 0 auto; */
 }
 
-.homePage > section{
+.homePage > section:first-of-type{
   height: 100vh;
+  background: linear-gradient(to top, #feb300 50%, #fff5d7 50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: 1/1/-1/-1;
+  place-items: center;
 }

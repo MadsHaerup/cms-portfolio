@@ -1,4 +1,5 @@
 import { Router } from "@reach/router";
+import HeroGif from "./components/heroSection/HeroGif";
 import Navbar from "./components/navbar/Navbar";
 import SoMe from "./components/soMe/SoMe";
 import AllBlogs from "./views/blog/AllBlogs";
