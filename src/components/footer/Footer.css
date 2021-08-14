@@ -1,13 +1,19 @@
 footer{
 background: var(--main-text-color);
+height: 100px;
+display: grid;
 }
 
 .footerList{
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.footerList__item{}
+.footerList__item{
+  margin-right:1.5rem;
+}
 .footerList__item__Link{
   text-decoration: none;
   color:#fff;
