@@ -3,14 +3,8 @@
 }
 .projectContainer__item{
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   max-width: 100%;
   margin: 0 auto;
 }
-/* .projectContainer :nth-child(odd){
-  grid-area: 1/5/6/-1;
-}
-.projectContainer :nth-child(even){
-  grid-area: 2/1/7/3;
-} */

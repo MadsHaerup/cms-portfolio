@@ -1,4 +1,5 @@
 import { Router } from "@reach/router";
+import Cursor from "./components/cursor/Cursor";
 import HeroGif from "./components/heroSection/HeroGif";
 import Navbar from "./components/navbar/Navbar";
 import SoMe from "./components/soMe/SoMe";
@@ -10,6 +11,7 @@ require('dotenv').config();
 function App() {
   return (
     <div className="App">
+      <Cursor />
       <Navbar/>
       <SoMe/>
   

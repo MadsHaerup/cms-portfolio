@@ -1,12 +1,26 @@
 import React from 'react';
-import wave from './wave.svg';
+import ToTopBtn from '../totopButton/ToTopBtn';
 import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <img className="footer__wave" src={wave} alt="" />
-      
+    <footer>
+      <ul className="footerList">
+        <li className="footerList__item">
+          <a className="footerList__item__Link" href="">Github</a>
+        </li>
+        <li className="footerList__item">
+          <a className="footerList__item__Link" href="">LinkedIn</a>
+        </li>
+        <li className="footerList__item">
+          <a className="footerList__item__Link" href="">Dev</a>
+        </li>
+        <li className="footerList__item">
+          <a className="footerList__item__Link" href="">CodePen</a>
+        </li>
+      </ul>
+
+      <ToTopBtn />
     </footer>
   )
 }

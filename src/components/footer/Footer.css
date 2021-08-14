@@ -1,7 +1,14 @@
-.footer{
-  position: relative;
-}
-.footer__wave{
-  position: absolute;
+footer{
+background: var(--main-text-color);
 }
 
+.footerList{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.footerList__item{}
+.footerList__item__Link{
+  text-decoration: none;
+  color:#fff;
+}
