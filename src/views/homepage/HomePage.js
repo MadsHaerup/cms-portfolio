@@ -10,8 +10,12 @@ export default function HomePage() {
   return (
     <div className="homePage">
       <section>
-        <SkewedText/>
-        <TextBox text ="Mads Hærup" />
+        <div className="herosection">
+          <TextBox text ="Mads Hærup" />
+          <SkewedText/>
+          <TextBox text ="Mads Hærup" />
+        </div>
+       
       </section>
 
       <section id="projects">

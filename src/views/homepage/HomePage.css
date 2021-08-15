@@ -10,7 +10,7 @@
   place-items: center;
   min-height: 100vh;
   /* max-height: 100vh; */
-  height: 1500px;
+  height: 2500px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: url("../../assets/img/pb.png");
@@ -26,4 +26,13 @@
     background-size: cover;
     background-position: center center;
    }
+ }
+
+ .herosection{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(3,1fr);
+   grid-area: 1/2/-1/-1;
+   height:100%;
+   place-items: center;
  }
