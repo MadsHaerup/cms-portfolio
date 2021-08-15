@@ -4,13 +4,22 @@ import BrowserMockup from '../browserMockup/BrowserMockup';
 
 export default function Projects() {
   return (
-    <section className="projectContainer">
       <article className="projectContainer__item" >
-        <BrowserMockup title="A Sports app landingpage" website="https://elegant-nightingale-b0dfbe.netlify.app/"/>
-        <div className="odd">
-        <BrowserMockup title="A Sports app landingpage" website="https://elegant-nightingale-b0dfbe.netlify.app/"/>
+        <div className="projectContainer__item__odd" >
+          <BrowserMockup title="A Sports app landingpage" website="https://elegant-nightingale-b0dfbe.netlify.app/"/>
+        </div>
+
+        <div  className="projectContainer__item__even">
+          <BrowserMockup title="A Sports app landingpage" website="https://elegant-nightingale-b0dfbe.netlify.app/"/>
+        </div>
+
+        <div  className="projectContainer__item__odd">
+          <BrowserMockup title="A Sports app landingpage" website="https://elegant-nightingale-b0dfbe.netlify.app/"/>
+        </div>
+
+        <div  className="projectContainer__item__even">
+          <BrowserMockup title="A Sports app landingpage" website="https://elegant-nightingale-b0dfbe.netlify.app/"/>
         </div>
       </article>
-    </section>
   )
 }

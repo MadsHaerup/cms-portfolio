@@ -14,9 +14,9 @@
   border-radius: 6px;
   background: #FFFAF7;
   min-height: 400px;
-  height: 400px;
-  width: 500px;
+  width: 100%;
   display: grid;
+
 }
 *, :after, :before {
   -webkit-box-sizing: border-box;
@@ -72,7 +72,4 @@
   background-color: #fff;
   box-shadow: 0 0.1em 1em 0 rgb(0 0 0 / 40%);
   z-index: 1;
-}
-.odd{
-  padding-top:8rem;
 }

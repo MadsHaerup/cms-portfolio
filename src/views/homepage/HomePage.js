@@ -1,22 +1,23 @@
 import Projects from '../../components/projects/Projects';
 import './HomePage.css';
-import Headline from '../../components/headline/Headline';
 import SkewedText from '../../components/skewedText/SkewedText';
 import Footer from '../../components/footer/Footer';
+import TextBox from '../../components/textBox/TextBox';
 
 
 export default function HomePage() {
 
   return (
     <div className="homePage">
-      <Headline/>
       <section>
         <SkewedText/>
+        <TextBox text ="Mads Hærup" />
       </section>
 
-      <section>
-        <Projects />
+      <section id="projects">
+      <Projects />
       </section>
+
       <Footer/>
     </div>
   )
