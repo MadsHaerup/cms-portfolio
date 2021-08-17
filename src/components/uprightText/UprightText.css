@@ -1,0 +1,12 @@
+.upright {
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+	.upright {
+		writing-mode: horizontal-tb;
+		text-orientation: sideways;
+	}
+}

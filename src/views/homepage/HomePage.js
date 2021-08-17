@@ -3,6 +3,7 @@ import "./HomePage.css";
 import SkewedText from "../../components/skewedText/SkewedText";
 import Footer from "../../components/footer/Footer";
 import TextBox from "../../components/textBox/TextBox";
+import UprightText from "../../components/uprightText/UprightText";
 
 export default function HomePage() {
 	return (
@@ -16,6 +17,7 @@ export default function HomePage() {
 			</section>
 
 			<section id="projects">
+				<UprightText text="Projects" />
 				<Projects />
 			</section>
 

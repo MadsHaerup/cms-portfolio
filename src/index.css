@@ -27,5 +27,6 @@ a {
 }
 h1,
 h2 {
-	font-size: clamp(2rem, -0.875rem + 10vw, 10rem);
+	/* font-size: clamp(2rem, -0.875rem + 10vw, 10rem); */
+	font-size: 10vw;
 }
