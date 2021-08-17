@@ -1,32 +1,32 @@
-.headline{
-  width: 20%;
-  justify-self: center;
-  display: flex;
-  flex-direction:column;
-  text-align:center;
-  line-height:1;
-  z-index: 10;
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.headline {
+	width: 20%;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 1;
+	z-index: 10;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.fname{
-  text-transform: uppercase;
-  margin:0;
-  margin-top:1rem;
-  font-size:3rem;
+.fname {
+	text-transform: uppercase;
+	margin: 0;
+	margin-top: 1rem;
+	font-size: 3rem;
 }
 
-.lname{
-  color:#FEB300;
-  text-transform: uppercase;
-  transform: scale(-1, -1);
-  margin:0;
-  font-size:3rem
+.lname {
+	color: #feb300;
+	text-transform: uppercase;
+	transform: scale(-1, -1);
+	margin: 0;
+	font-size: 3rem;
 }
-.lname:hover{
-  transform: scale(1, 1);
-  transition: transform 0.5s ease-in-out;
+.lname:hover {
+	transform: scale(1, 1);
+	transition: transform 0.5s ease-in-out;
 }

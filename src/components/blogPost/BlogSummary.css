@@ -1,17 +1,17 @@
-.blogSummary{
-  display: grid;
-    max-width: 600px;
-    border-radius: 10px;
-    background-color: white;
-    padding: 2rem;
-    box-shadow: 0 0.1em 1em 0 rgb(0 0 0 / 40%);
+.blogSummary {
+	display: grid;
+	max-width: 600px;
+	border-radius: 10px;
+	background-color: white;
+	padding: 2rem;
+	box-shadow: 0 0.1em 1em 0 rgb(0 0 0 / 40%);
 }
-.blogLink{
-  text-decoration: none;
+.blogLink {
+	text-decoration: none;
 }
 
-@media screen and (max-width: 768px ) {
-  .blogSummary{
-    padding: 1rem;
-  }
+@media screen and (max-width: 768px) {
+	.blogSummary {
+		padding: 1rem;
+	}
 }
