@@ -16,7 +16,7 @@ export default function HomePage() {
 				</div>
 			</section>
 
-			<section id="projects">
+			<section id="projects" className="projects">
 				<UprightText text="Projects" />
 				<Projects />
 			</section>

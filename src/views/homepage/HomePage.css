@@ -1,6 +1,9 @@
 .homePage {
 	display: grid;
 }
+.homePage > .projects {
+	display: flex;
+}
 
 .homePage > section:first-of-type {
 	display: grid;
@@ -21,13 +24,6 @@
 	background: linear-gradient(to bottom, #feb300 50%, #fff5d7 50%);
 }
 
-@media screen and (max-width: 768px) {
-	.homePage > section:first-of-type {
-		background-size: cover;
-		background-position: center center;
-	}
-}
-
 .herosection {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -37,12 +33,12 @@
 	place-items: center;
 }
 
-#project {
-	display: flex;
-}
-
 @media screen and (max-width: 768px) {
-	#project {
+	.homePage > section:first-of-type {
+		background-size: cover;
+		background-position: center center;
+	}
+	.homePage > .projects {
 		display: flex;
 		flex-direction: column;
 	}
