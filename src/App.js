@@ -8,6 +8,7 @@ import AllBlogs from "./views/blog/AllBlogs";
 import Blog from "./views/blog/Blog";
 import Loading from "./components/loading/Loading";
 import MyProjects from "./components/myprojects/MyProjects";
+import "./App.css";
 // import HomePage from "./views/homepage/HomePage";
 require("dotenv").config();
 
@@ -21,7 +22,7 @@ function App() {
 		}, 5000);
 	}, []);
 	return (
-		<div className="App">
+		<div className="app">
 			<Cursor />
 
 			{loading ? (
