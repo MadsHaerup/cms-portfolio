@@ -1,6 +1,8 @@
 import React from "react";
 import "./Loading.css";
 import { motion } from "framer-motion";
+import { css } from "@emotion/react";
+import HashLoader from "react-spinners/HashLoader";
 
 export default function Loading() {
 	const container = {
@@ -22,15 +24,10 @@ export default function Loading() {
 		hidden: { opacity: 0, x: -400 },
 		show: { opacity: 1, x: -100 },
 	};
-	const itemTwo = {
-		hidden: { opacity: 0, x: 400 },
-		show: { opacity: 1, x: 100, backgroundColor: "#e4ff49" },
-	};
+
 	return (
 		<motion.div className="loading" variants={container} initial="hidden" animate="show">
-			{/* <Logo /> */}
-			<motion.h1 variants={item}>Mads</motion.h1>
-			<motion.h1 variants={itemTwo}>Hærup</motion.h1>
+			<HashLoader variants={item} size={150} />
 		</motion.div>
 	);
 }

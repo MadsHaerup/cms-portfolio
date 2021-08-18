@@ -2,9 +2,10 @@
 	display: grid;
 	max-width: 600px;
 	border-radius: 10px;
-	background-color: white;
+	background-color: var(--third-bg-color);
 	padding: 2rem;
 	box-shadow: 0 0.1em 1em 0 rgb(0 0 0 / 40%);
+	color: var(--primary-font-color);
 }
 .blogLink {
 	text-decoration: none;

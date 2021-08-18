@@ -7,7 +7,8 @@ import SoMe from "./components/soMe/SoMe";
 import AllBlogs from "./views/blog/AllBlogs";
 import Blog from "./views/blog/Blog";
 import Loading from "./components/loading/Loading";
-import HomePage from "./views/homepage/HomePage";
+import MyProjects from "./components/myprojects/MyProjects";
+// import HomePage from "./views/homepage/HomePage";
 require("dotenv").config();
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
 					<SoMe />
 
 					<Router>
-						<HomePage path="/" />
+						{/* <HomePage path="/" /> */}
+						<MyProjects path="/" />
 
 						<AllBlogs path="blog" />
 						<Blog path="blog/:id" />

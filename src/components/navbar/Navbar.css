@@ -1,6 +1,12 @@
 nav {
 	position: fixed;
 }
+.navigationsItems__item a {
+	text-decoration: none;
+	color: var(--primary-font-color);
+	font-family: "Aileron-Bold";
+	font-size: 1.5rem;
+}
 .navigationItems {
 	display: flex;
 	flex-direction: column;
@@ -9,13 +15,9 @@ nav {
 .navigationsItems__item {
 	margin-bottom: 1rem;
 }
-.navigationsItems__item > a {
-	text-decoration: none;
-}
 .navigationsItems__item a:hover {
 	border-bottom: 2px solid var(--hover-color);
 }
-
 @media screen and (max-width: 768px) {
 	nav {
 		width: 100%;
@@ -24,9 +26,16 @@ nav {
 	.navigationItems {
 		display: flex;
 		flex-direction: row;
-		background-color: white;
+		background-color: black;
 		justify-content: space-evenly;
 		margin-top: 0;
 		padding-left: 0;
+	}
+	.navigationsItems__item {
+		padding: 1rem;
+		margin-bottom: 0;
+	}
+	.navigationsItems__item a {
+		font-size: 1rem;
 	}
 }

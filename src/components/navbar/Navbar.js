@@ -17,6 +17,12 @@ export default function Navbar() {
 						<NavLink to={item.path}>{item.title}</NavLink>
 					</motion.li>
 				))}
+				<motion.li
+					whileHover={{ scale: 1.3, originX: 0, color: "var(--hover-color)" }}
+					transition={{ type: "spring", stiffness: 250 }}
+					className="navigationsItems__item">
+					<NavAnchor href="#projects">Projects</NavAnchor>
+				</motion.li>
 			</ul>
 		</nav>
 	);
@@ -30,7 +36,19 @@ const NavLink = (props) => (
 			// anchor element's props
 			return {
 				style: {
-					color: isCurrent ? "#FBAF08" : "#2F1829",
+					color: isCurrent ? "#104f55" : "var(--primary-font-color)",
+				},
+			};
+		}}
+	/>
+);
+const NavAnchor = (props) => (
+	<a
+		{...props}
+		getProps={({ isCurrent }) => {
+			return {
+				style: {
+					color: isCurrent ? "#104f55" : "var(--primary-font-color)",
 				},
 			};
 		}}

@@ -1,9 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@font-face {
+	font-family: "Aileron";
+	src: url("fonts/Aileron-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "Aileron-Bold";
+	src: url("fonts/Aileron-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: "Aileron-Light";
+	src: url("fonts/Aileron-Light.otf") format("opentype");
+}
 :root {
-	--main-text-color: #2f1829;
-	--main-bg-color: #fff5d7;
-	--hover-color: #fbaf08;
+	--primary-bg-color: #040404;
+	--secondary-bg-color: #0c0f0a;
+	--third-bg-color: #000;
+	--primary-font-color: #eef0f2;
+	--secondary-fontColor: rgba(255, 255, 255, 0.7);
+	--link-font-color: #fff5d7;
+	--hover-color: #104f55;
 }
 
 html {
@@ -11,22 +25,8 @@ html {
 }
 
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: "Aileron", sans-serif;
 	margin: 0;
-	background-color: var(--main-bg-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a {
-	color: var(--main-text-color);
-}
-h1,
-h2 {
-	/* font-size: clamp(2rem, -0.875rem + 10vw, 10rem); */
-	font-size: 10vw;
+	background-color: var(--secondary-bg-color);
+	color: var(--primary-font-color);
 }
