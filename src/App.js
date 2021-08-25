@@ -9,6 +9,8 @@ import Blog from "./views/blog/Blog";
 import Loading from "./components/loading/Loading";
 import MyProjects from "./components/myprojects/MyProjects";
 import "./App.css";
+import EmailForm from "./components/contact/EmailForm";
+import ToTopBtn from "./components/totopButton/ToTopBtn";
 // import HomePage from "./views/homepage/HomePage";
 require("dotenv").config();
 
@@ -24,23 +26,20 @@ function App() {
 	return (
 		<div className="app">
 			<Cursor />
+			<>
+				<Navbar />
+				<SoMe />
 
-			{loading ? (
-				<Loading />
-			) : (
-				<>
-					<Navbar />
-					<SoMe />
+				<Router>
+					{/* <HomePage path="/" /> */}
+					<MyProjects path="project" />
 
-					<Router>
-						{/* <HomePage path="/" /> */}
-						<MyProjects path="/" />
-
-						<AllBlogs path="blog" />
-						<Blog path="blog/:id" />
-					</Router>
-				</>
-			)}
+					<AllBlogs path="blog" />
+					<Blog path="blog/:id" />
+					<EmailForm path="contact" />
+				</Router>
+				<ToTopBtn />
+			</>
 		</div>
 	);
 }

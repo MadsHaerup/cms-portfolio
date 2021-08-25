@@ -17,4 +17,10 @@ export const NavbarData = [
 		cName: "nav-text",
 		id: 3,
 	},
+	{
+		title: "Project",
+		path: "project",
+		cName: "nav-text",
+		id: 4,
+	},
 ];

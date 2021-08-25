@@ -2,6 +2,7 @@
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	font-size: 3rem;
+	font-family: "Fivo Sans Modern Extra Black";
 }
 
 @media screen and (max-width: 768px) {

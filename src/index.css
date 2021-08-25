@@ -10,6 +10,32 @@
 	font-family: "Aileron-Light";
 	src: url("fonts/Aileron-Light.otf") format("opentype");
 }
+
+@font-face {
+	font-family: "Fivo Sans Modern Regular";
+	src: local("Fivo Sans Modern Regular"), url("fonts/FivoSansModern-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Fivo Sans Modern Medium";
+	src: local("Fivo Sans Modern Medium"), url("fonts/FivoSansModern-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Fivo Sans Modern Bold";
+	src: local("Fivo Sans Modern Bold"), url("fonts/FivoSansModern-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Fivo Sans Modern Heavy";
+	src: local("Fivo Sans Modern Heavy"), url("fonts/FivoSansModern-Heavy.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Fivo Sans Modern Extra Black";
+	src: local("Fivo Sans Modern Extra Black"), url("fonts/FivoSansModern-ExtBlack.woff") format("woff");
+}
+
 :root {
 	--primary-bg-color: #040404;
 	--secondary-bg-color: #0c0f0a;
@@ -29,4 +55,9 @@ body {
 	margin: 0;
 	background-color: var(--secondary-bg-color);
 	color: var(--primary-font-color);
+}
+
+h1,
+h2 {
+	font-family: "Fivo Sans Modern Extra Black";
 }
