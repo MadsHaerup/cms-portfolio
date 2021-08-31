@@ -1,0 +1,15 @@
+.btn {
+	width: 50%;
+	place-self: center;
+	padding: 0.5rem 1rem;
+	background: white;
+	font-weight: 800;
+	border-radius: 10px;
+	transition: background 400ms ease-in-out;
+	border: none;
+}
+
+.btn:hover {
+	background-color: var(--hover-color);
+	color: var(--primary-font-color);
+}

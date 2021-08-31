@@ -1,0 +1,44 @@
+.homePage {
+	display: grid;
+}
+.homePage > .projects {
+	display: flex;
+}
+
+.homePage > section:first-of-type {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-area: 1/1/-1/-1;
+	place-items: center;
+	min-height: 100vh;
+	height: 2000px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url("../../assets/img/pb.png");
+	background-size: contain;
+	background-position: 20%;
+}
+.homePage > section:nth-of-type(2) {
+	background: linear-gradient(to bottom, #feb300 50%, #fff5d7 50%);
+}
+
+.herosection {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-area: 1/2/-1/-1;
+	height: 100%;
+	place-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	.homePage > section:first-of-type {
+		background-size: cover;
+		background-position: center center;
+	}
+	.homePage > .projects {
+		display: flex;
+		flex-direction: column;
+	}
+}
