@@ -12,7 +12,7 @@ export default function HomePage() {
 				<div className="herosection">
 					<TextBox text="Mads Hærup" />
 					<SkewedText />
-					<TextBox text="Mads Hærup" />
+					<TextBox text="Reach out!" />
 				</div>
 			</section>
 

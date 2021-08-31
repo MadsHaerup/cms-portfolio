@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./TextBox.css";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 export default function TextBox({ text }) {
-	const { ref, inView } = useInView({ threshold: 0.5 });
+	const { ref, inView } = useInView({ threshold: 0.8 });
 
 	const transition = {
 		duration: 1.3,
@@ -31,7 +31,6 @@ export default function TextBox({ text }) {
 			animate={inView ? "show" : "hidden"}
 			exit="hidden"
 			variants={variants}>
-			{`Header inside viewport ${inView}.`}
 			<h1> {text} </h1>
 		</motion.div>
 	);

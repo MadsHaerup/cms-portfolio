@@ -1,0 +1,44 @@
+form {
+	display: grid;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 5rem;
+	height: 500px;
+}
+
+.inputGroup {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5rem;
+}
+.inputGroup input,
+.inputGroup textarea {
+	border: 1px solid darkgray;
+	background: none;
+	font-size: inherit;
+	font-family: inherit;
+	padding: 0.3em 1em;
+	resize: none;
+	border: none;
+	border-bottom: 1px solid white;
+	outline: none;
+	color: white;
+}
+
+.inputGroup textarea {
+	border-bottom: none;
+	border: 2px dashed white;
+}
+
+.inputGroup label {
+	font-size: 0.8em;
+}
+form button {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: 700;
+	padding: 0.3em 1em;
+	align-self: center;
+	justify-self: left;
+}

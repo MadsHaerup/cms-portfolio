@@ -7,7 +7,7 @@ import AllBlogs from "./views/blog/AllBlogs";
 import Blog from "./views/blog/Blog";
 import MyProjects from "./components/myprojects/MyProjects";
 import "./App.css";
-import EmailForm from "./components/contact/EmailForm";
+import EmailForm from "./components/contact/EmailForm/EmailForm";
 import ToTopBtn from "./components/totopButton/ToTopBtn";
 import HomePage from "./views/homePage/HomePage";
 require("dotenv").config();
