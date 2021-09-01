@@ -27,22 +27,24 @@ export default function AllBlogs() {
 	}, [setBlogs, limit]);
 
 	return (
-		<BlogLayout>
-			{blogs.map((blog) => (
-				<BlogSummary
-					id={blog.metadata.objectid}
-					date={blog.metadata.date}
-					author={blog.metadata.author}
-					headline={blog.metadata.blog_headline}
-					summary={blog.metadata.blog_summary}
-				/>
-			))}
+		<div className="container">
+			<BlogLayout>
+				{blogs.map((blog) => (
+					<BlogSummary
+						id={blog.metadata.objectid}
+						date={blog.metadata.date}
+						author={blog.metadata.author}
+						headline={blog.metadata.blog_headline}
+						summary={blog.metadata.blog_summary}
+					/>
+				))}
 
-			{blogs.length < limit ? (
-				<div>You have reached the end!</div>
-			) : (
-				<Button content="Load More Articles" onClick={() => setLimit(limit + 1)} />
-			)}
-		</BlogLayout>
+				{blogs.length < limit ? (
+					<div>You have reached the end!</div>
+				) : (
+					<Button content="Load More Articles" onClick={() => setLimit(limit + 1)} />
+				)}
+			</BlogLayout>
+		</div>
 	);
 }

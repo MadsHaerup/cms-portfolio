@@ -4,3 +4,9 @@
 	display: grid;
 	place-content: center;
 }
+
+.container {
+	background-image: url("./Group.svg");
+	background-size: 100% 100%;
+	min-height: 100vh;
+}

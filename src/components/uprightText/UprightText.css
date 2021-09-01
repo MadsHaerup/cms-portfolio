@@ -2,7 +2,8 @@
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	font-size: 3rem;
-	font-family: "Fivo Sans Modern Extra Black";
+	font-family: "Aileron-Bold";
+	text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {

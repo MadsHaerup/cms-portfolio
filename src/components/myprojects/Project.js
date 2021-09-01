@@ -1,20 +1,20 @@
 import React from "react";
+import "./Projects.css";
 
-export default function Project() {
+export default function Project({ imageUrl, title, description, github, webUrl }) {
 	return (
 		<div className="item-wrap">
-			<div className="image">
-				<div className="img-wrap"></div>
-			</div>
+			<a href={webUrl} target="_blank" className="image" style={{ backgroundImage: `url(${imageUrl})` }} rel="noreferrer"></a>
 			<div className="info">
 				<h3>
-					<span>Paolo_</span>
-					<span>Fornasier</span>
+					<span>{title}</span>
 				</h3>
 				<p>
-					<span>The portfolio of Paolo Fornasier,</span>
-					<span>a young Italian musician</span>
+					<span>{description}</span>
 				</p>
+				<a className="item-wrap__link" href={github} target="_blank" rel="noreferrer">
+					View on Github
+				</a>
 			</div>
 		</div>
 	);

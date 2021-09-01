@@ -1,8 +1,4 @@
-.allprojects {
-	display: grid;
-	grid-gap: 8rem;
-}
-#projects {
+.contact {
 	max-width: 1200px;
 	padding-top: 3rem;
 	padding-right: 1rem;
@@ -12,15 +8,9 @@
 	grid-template-columns: 1fr 3fr;
 	grid-gap: 3rem;
 }
-.item-wrap:nth-child(odd) {
-	direction: rtl;
-}
-.item-wrap:nth-child(even) {
-	direction: ltr;
-}
 
 @media screen and (max-width: 768px) {
-	#projects {
+	.contact {
 		padding-right: 1rem;
 		padding-left: 1rem;
 		grid-template-columns: 1fr;

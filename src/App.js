@@ -10,6 +10,7 @@ import "./App.css";
 import EmailForm from "./components/contact/EmailForm/EmailForm";
 import ToTopBtn from "./components/totopButton/ToTopBtn";
 import HomePage from "./views/homePage/HomePage";
+import { Contact } from "./views/contact/Contact";
 require("dotenv").config();
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
 				<MyProjects path="project" />
 				<AllBlogs path="blog" />
 				<Blog path="blog/:id" />
-				<EmailForm path="contact" />
+				{/* <EmailForm path="contact" /> */}
+				<Contact path="contact" />
 			</Router>
 			<ToTopBtn />
 		</div>
