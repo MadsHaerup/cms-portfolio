@@ -4,12 +4,12 @@ import { useInView } from "react-intersection-observer";
 
 import "./Skewed.css";
 
-export default function SkewedText() {
+export default function SkewedText({ text }) {
 	const { ref, inView } = useInView({ threshold: 0.8 });
 
 	const transition = {
 		duration: 1.3,
-		delay: 0.1,
+		// delay: 0.1,
 		ease: "easeInOut",
 	};
 
@@ -31,7 +31,7 @@ export default function SkewedText() {
 			animate={inView ? "show" : "hidden"}
 			exit="hidden"
 			variants={variants}>
-			<h1>Front End Developer</h1>
+			<h1>{text}</h1>
 		</motion.div>
 	);
 }

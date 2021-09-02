@@ -1,19 +1,21 @@
-import Projects from "../../components/projects/Projects";
 import "./HomePage.css";
 import SkewedText from "../../components/skewedText/SkewedText";
 import Footer from "../../components/footer/Footer";
-import TextBox from "../../components/textBox/TextBox";
-import UprightText from "../../components/uprightText/UprightText";
+import { Skills } from "../../components/skills/Skills";
 
 export default function HomePage() {
 	return (
 		<div className="homePage">
 			<section>
 				<div className="herosection">
-					<TextBox text="Mads Hærup" />
-					<SkewedText />
-					<TextBox text="Reach out!" />
+					<SkewedText text="Mads Hærup" />
+					<SkewedText text="Front End Developer" />
+					<SkewedText text="Reach Out!" />
 				</div>
+			</section>
+
+			<section>
+				<Skills />
 			</section>
 
 			<Footer />

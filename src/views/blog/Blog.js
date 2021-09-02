@@ -28,7 +28,13 @@ export default function Blog({ id }) {
 
 	return (
 		<BlogLayout>
-			<BlogPost headline={items.blog_headline} date={items.date} author={items.author} content={items.content} />
+			<BlogPost
+				headline={items.blog_headline}
+				date={items.date}
+				author={items.author}
+				content={items.content}
+				profileimage={items.profileimage?.imgix_url}
+			/>
 		</BlogLayout>
 	);
 }

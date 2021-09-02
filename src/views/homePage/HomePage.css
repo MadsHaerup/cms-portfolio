@@ -20,7 +20,7 @@
 	background-position: 20%;
 }
 .homePage > section:nth-of-type(2) {
-	background: linear-gradient(to bottom, #feb300 50%, #fff5d7 50%);
+	min-height: 100vh;
 }
 
 .herosection {
@@ -36,6 +36,7 @@
 	.homePage > section:first-of-type {
 		background-size: cover;
 		background-position: center center;
+		grid-template-columns: 1fr;
 	}
 	.homePage > .projects {
 		display: flex;

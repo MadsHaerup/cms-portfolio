@@ -1,5 +1,5 @@
 .skewed {
-	text-align: right;
+	text-align: center;
 	transform: rotate3d(-1, 1, 0, -45deg);
 	transform-style: preserve-3d;
 	will-change: transform;
@@ -17,10 +17,29 @@
 	transform-style: preserve-3d;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
 	.skewed {
-		grid-column: 1 / span 2;
 		z-index: 10;
-		grid-area: 1/1/-1/-1;
+		transform: rotate3d(0, 1, 0, 0deg);
+		color: transparent;
+		-webkit-text-stroke: 2px var(--primary-font-color);
+		font-size: 4rem;
+	}
+	.skewed > h1:hover {
+		color: var(--primary-font-color);
+	}
+	.skewed > h1 {
+		margin: 0;
+	}
+	.skewed:nth-child(1) {
+		place-self: end;
+	}
+	.skewed:nth-child(3) {
+		text-align: left;
+	}
+}
+@media screen and (max-width: 414px) {
+	.skewed {
+		font-size: 3rem;
 	}
 }

@@ -1,13 +1,12 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import { BlogAuthor } from "../blogauthor/BlogAuthor";
 
-export default function BlogPost({ date, headline, content, author }) {
+export default function BlogPost({ date, headline, content, author, profileimage }) {
 	return (
 		<article className="blogPost">
+			<BlogAuthor profileimage={profileimage} date={date} author={author} />
 			<h1>{headline}</h1>
-			<div>
-				<span>{author}</span> || <span>{date}</span>
-			</div>
 			<ReactMarkdown>{content}</ReactMarkdown>
 		</article>
 	);

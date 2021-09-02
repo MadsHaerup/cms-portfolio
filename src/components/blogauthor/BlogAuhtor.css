@@ -1,0 +1,18 @@
+.blogAuthor {
+	display: flex;
+	align-items: center;
+}
+.blogAuthor__image {
+	margin-right: 1rem;
+	/* border-radius: 0% 89% 63% 81% / 27% 85% 0% 27%; */
+	border-radius: 19% 100% 41% 59% / 52% 49% 51% 45%;
+	border: 2px solid var(--link-font-color);
+}
+.blogAuthor__author {
+	display: flex;
+	flex-direction: column;
+}
+
+.blogAuthor__author span:nth-child(2) {
+	color: var(--secondary-fontColor);
+}

@@ -36,6 +36,7 @@ export default function AllBlogs() {
 						author={blog.metadata.author}
 						headline={blog.metadata.blog_headline}
 						summary={blog.metadata.blog_summary}
+						profileimage={blog.metadata.profileimage?.imgix_url}
 					/>
 				))}
 
