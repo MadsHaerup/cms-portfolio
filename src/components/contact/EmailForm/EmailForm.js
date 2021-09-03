@@ -40,40 +40,44 @@ export default function EmailForm() {
 		<>
 			{!isSubmitted ? (
 				<form onSubmit={handleSubmit(onSubmit)}>
-					<div>
-						<InputGroup
-							value={toSend.from_name}
-							onChange={handleChange}
-							htmlFor="from_name"
-							id="from_name"
-							type="text"
-							name="from_name"
-							labelText="Full name"
-							register={{ ...register("fromName", { required: true }) }}
-						/>
-						{errors.fromName && <span>This field is required</span>}
-					</div>
-					<div>
-						<InputGroup
-							value={toSend.reply_to}
-							onChange={handleChange}
-							id="reply_to"
-							type="email"
-							name="reply_to"
-							labelText="Enter your email"
-							register={{
-								...register(
-									"replyTo",
-									{ required: true },
-									{ patter: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ }
-								),
-							}}
-						/>
-						{errors.replyTo && <span>This field is required</span>}
+					<div className="inputGroup__Container">
+						<div>
+							<InputGroup
+								value={toSend.from_name}
+								onChange={handleChange}
+								htmlFor="from_name"
+								id="from_name"
+								type="text"
+								name="from_name"
+								labelText="Full name"
+								register={{ ...register("fromName", { required: true }) }}
+							/>
+							{errors.fromName && <span>This field is required</span>}
+						</div>
+						<div>
+							<InputGroup
+								value={toSend.reply_to}
+								onChange={handleChange}
+								id="reply_to"
+								type="email"
+								name="reply_to"
+								labelText="Enter your email"
+								register={{
+									...register(
+										"replyTo",
+										{ required: true },
+										{ patter: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ }
+									),
+								}}
+							/>
+							{errors.replyTo && <span>This field is required</span>}
+						</div>
 					</div>
 
 					<div className="inputGroup">
-						<label htmlFor="message">Enter your message:</label>
+						<label className="inputGroup__messageLabel" htmlFor="message">
+							Enter your message:
+						</label>
 						<textarea
 							id="message"
 							name="message"

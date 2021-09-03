@@ -43,7 +43,8 @@
 	--primary-font-color: #eef0f2;
 	--secondary-fontColor: rgba(255, 255, 255, 0.7);
 	--link-font-color: #fff5d7;
-	--hover-color: #104f55;
+	/* --hover-color: #104f55; */
+	--hover-color: #08fdd8;
 }
 
 html {

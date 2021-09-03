@@ -26,7 +26,7 @@ function App() {
 
 				<Router>
 					<HomePage path="/" />
-					<MyProjects path="project" />
+					<MyProjects path="projects" />
 					<AllBlogs path="blog" />
 					<Blog path="blog/:id" />
 					<Contact path="contact" />

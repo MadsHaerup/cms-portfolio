@@ -3,7 +3,7 @@
 	text-decoration: none;
 }
 .item-wrap__link:hover {
-	color: var(--link-font-color);
+	color: var(--hover-color);
 }
 
 .item-wrap {

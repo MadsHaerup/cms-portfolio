@@ -4,7 +4,12 @@ import "./Projects.css";
 export default function Project({ imageUrl, title, description, github, webUrl }) {
 	return (
 		<div className="item-wrap">
-			<a href={webUrl} target="_blank" className="image" style={{ backgroundImage: `url(${imageUrl})` }} rel="noreferrer"></a>
+			<a
+				href={webUrl}
+				target="_blank"
+				className="image"
+				style={{ backgroundImage: `url(${imageUrl})` }}
+				rel="noreferrer"></a>
 			<div className="info">
 				<h3>
 					<span>{title}</span>
