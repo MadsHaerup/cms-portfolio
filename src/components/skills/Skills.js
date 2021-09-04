@@ -5,10 +5,29 @@ import "./Skills.css";
 export const Skills = () => {
 	return (
 		<div className="skills">
-			<div className="skills__header">
-				<div className="skills__header__image"></div>
-				{/* <h1 className="skills__header__title">SKILLS</h1> */}
-				<AnimatedTitle />
+			<AnimatedTitle />
+			<div className="skills__overview">
+				<div className="skills__overview__details">
+					<details>
+						<summary>REACT</summary>
+						<ul>
+							<li>REACT QUERY</li>
+						</ul>
+					</details>
+					<details>
+						<summary>REACT</summary>
+						<ul>
+							<li>REACT QUERY</li>
+						</ul>
+					</details>
+					<details>
+						<summary>REACT</summary>
+						<ul>
+							<li>REACT QUERY</li>
+						</ul>
+					</details>
+				</div>
+				<div className="skills__overview__bggimage"></div>
 			</div>
 		</div>
 	);

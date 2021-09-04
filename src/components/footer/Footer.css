@@ -1,7 +1,8 @@
 footer {
-	background: var(--main-text-color);
+	background: var(--hover-color);
 	height: 100px;
 	display: grid;
+	/* grid-column: 1 / span 3; */
 }
 
 .footerList {

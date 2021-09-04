@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import "./AnimatedTitle.css";
 
 export const AnimatedTitle = () => {
-	const { ref, inView } = useInView({ threshold: 0.5 });
+	const { ref, inView } = useInView({ threshold: 0.2 });
 
 	const container = {
 		hidden: { opacity: 0 },
@@ -12,18 +13,19 @@ export const AnimatedTitle = () => {
 			opacity: 1,
 			transition: {
 				staggerChildren: 0.2,
+				type: "spring",
+				bounce: 0.25,
 			},
 		},
 	};
 
 	const item = {
-		hidden: { opacity: 0 },
-		show: { opacity: 1 },
+		hidden: { opacity: 0, y: 50 },
+		show: { opacity: 1, y: 0 },
 	};
 	return (
 		<motion.h1
 			ref={ref}
-			style={{ fontSize: "5rem" }}
 			initial="hidden"
 			animate={inView ? "show" : "hidden"}
 			exit="hidden"

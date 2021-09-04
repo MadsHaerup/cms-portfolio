@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
 @font-face {
 	font-family: "Aileron";
 	src: url("fonts/Aileron-Regular.otf") format("opentype");
@@ -38,13 +41,17 @@
 
 :root {
 	--primary-bg-color: #040404;
-	--secondary-bg-color: #0c0f0a;
+	--secondary-bg-color: #fff5d7;
+	/* --secondary-bg-color: #0c0f0a; */
 	--third-bg-color: #000;
-	--primary-font-color: #eef0f2;
+	--primary-font-color: #2f1829;
+	/* --primary-font-color: #eef0f2; */
 	--secondary-fontColor: rgba(255, 255, 255, 0.7);
 	--link-font-color: #fff5d7;
 	/* --hover-color: #104f55; */
-	--hover-color: #08fdd8;
+	--hover-color: #feb300;
+	--bgFont: "Zilla Slab Highlight", cursive;
+	--MonotonFont: "Monoton", cursive;
 }
 
 html {

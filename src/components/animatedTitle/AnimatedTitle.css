@@ -1,0 +1,7 @@
+.words {
+	font-size: 10rem;
+	text-transform: uppercase;
+}
+.char {
+	display: inline-block;
+}

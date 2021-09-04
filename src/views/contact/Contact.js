@@ -6,7 +6,6 @@ import "./Contact.css";
 export const Contact = () => {
 	return (
 		<div className="contact">
-			<UprightText text="Contact" />
 			<div>
 				<div style={{ maxWidth: "100%", height: "30%" }}>
 					<Keyboard />

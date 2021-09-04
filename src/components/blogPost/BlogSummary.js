@@ -9,11 +9,12 @@ export default function BlogSummary({ headline, summary, id, date, author, profi
 		<Link to={`${window.location.pathname}/${id}`} key={id} className="blogLink">
 			<motion.article
 				className="blogSummary"
-				whileHover={{ scale: 0.95 }}
+				// whileHover={{ scale: 0.95 }}
 				transition={{ type: "spring", stiffness: 150 }}>
 				<BlogAuthor profileimage={profileimage} date={date} author={author} />
 				<h1>{headline} </h1>
 				<p>{summary} </p>
+				<p>read more</p>
 			</motion.article>
 		</Link>
 	);

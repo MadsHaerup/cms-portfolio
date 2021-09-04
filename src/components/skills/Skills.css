@@ -1,10 +1,9 @@
-.skills__header {
+.skills__overview {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	place-items: center;
 }
 
-.skills__header__image {
+.skills__overview__bggimage {
 	background-image: url("./explosion.svg");
 	width: 600px;
 	height: 600px;
@@ -12,4 +11,13 @@
 }
 .skills__header__title {
 	font-size: 5rem;
+}
+.skills__overview__details > details {
+	padding: 1rem;
+	font-size: 2rem;
+	font-weight: bold;
+	border-bottom: 0.2rem solid white;
+}
+.skills__overview__details > details > ul {
+	list-style: none;
 }
