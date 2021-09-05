@@ -1,8 +1,8 @@
 .homePage {
 	display: grid;
 }
-.homePage > .projects {
-	display: flex;
+.homePage > section {
+	margin-bottom: 15rem;
 }
 
 #home {
@@ -19,12 +19,16 @@
 	background-size: contain;
 	background-position: 80% 100%;
 }
-.homePage > section:nth-of-type(2) {
-}
+
 #projects {
 	grid-template-columns: 1fr;
-}
-.homePage > section:nth-of-type(2) {
+	max-width: 1200px;
+	padding-top: 3rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding: 4rem 1rem;
+	display: grid;
+	grid-gap: 3rem;
 }
 
 .herosection {

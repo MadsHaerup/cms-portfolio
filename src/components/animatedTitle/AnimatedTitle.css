@@ -1,6 +1,8 @@
 .words {
 	font-size: 10rem;
 	text-transform: uppercase;
+	margin: 0;
+	margin-top: 1rem;
 }
 .char {
 	display: inline-block;

@@ -23,7 +23,9 @@
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "4.0.3",
 		"react-spinners": "^0.11.0",
-		"simple-git-hooks": "^2.6.1"
+		"react-spring": "^8.0.27",
+		"simple-git-hooks": "^2.6.1",
+		"use-3d-effect": "^1.1.0"
 	},
 	"scripts": {
 		"start": "react-scripts start",

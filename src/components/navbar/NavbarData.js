@@ -1,10 +1,10 @@
 export const NavbarData = [
-	// {
-	// 	title: "Home",
-	// 	path: "/",
-	// 	cName: "nav-text",
-	// 	id: 1,
-	// },
+	{
+		title: "Home",
+		path: "#home",
+		cName: "nav-text",
+		id: 1,
+	},
 	{
 		title: "About",
 		path: "#about",

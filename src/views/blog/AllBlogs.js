@@ -29,8 +29,10 @@ export default function AllBlogs() {
 	return (
 		<div className="container">
 			<BlogLayout>
+				<button onClick={() => window.history.back()}>Go back</button>
 				{blogs.map((blog) => (
 					<BlogSummary
+						key={blog.metadata.objectid}
 						id={blog.metadata.objectid}
 						date={blog.metadata.date}
 						author={blog.metadata.author}
