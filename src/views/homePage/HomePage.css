@@ -8,7 +8,7 @@
 #home {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	grid-area: 1/1/-1/-1;
 	place-items: center;
 	min-height: 100vh;
@@ -40,7 +40,21 @@
 	place-items: center;
 }
 
+@media screen and (max-width: 1000px) {
+	.homePage {
+		margin-left: 2rem;
+	}
+	#home {
+		grid-template-columns: 1fr;
+		background-position: center;
+		height: auto;
+	}
+}
+
 @media screen and (max-width: 768px) {
+	.homePage {
+		margin-left: 0;
+	}
 	.homePage > section:first-of-type {
 		background-size: cover;
 		background-position: center center;

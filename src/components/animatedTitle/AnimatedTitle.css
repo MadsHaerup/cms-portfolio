@@ -7,3 +7,15 @@
 .char {
 	display: inline-block;
 }
+
+@media screen and (max-width: 1200px) {
+	.words {
+		font-size: 5.5rem;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.words {
+		font-size: 4.5rem;
+	}
+}

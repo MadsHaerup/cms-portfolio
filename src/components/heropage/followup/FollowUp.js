@@ -4,15 +4,15 @@ import { useInView } from "react-intersection-observer";
 import "./FollowUp.css";
 
 export const FollowUp = () => {
-	const { ref, inView } = useInView({ threshold: 0.5 });
+	const { ref, inView } = useInView({ threshold: 0.3 });
 	const container = {
 		hidden: { opacity: 0 },
 		show: {
-			duration: 1,
+			duration: 0.5,
 			opacity: 1,
 			transition: {
-				delayChildren: 0.5,
-				staggerChildren: 0.5,
+				delayChildren: 0.1,
+				staggerChildren: 0.2,
 				type: "spring",
 				bounce: 1,
 			},

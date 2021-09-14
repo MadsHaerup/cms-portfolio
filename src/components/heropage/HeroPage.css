@@ -6,7 +6,6 @@
 	display: flex;
 	flex-direction: column;
 	place-self: center;
-	/* text-align: center; */
 	transform: rotate3d(-1, 1, 0, -45deg);
 	transform-style: preserve-3d;
 	will-change: transform;
@@ -25,4 +24,18 @@
 	color: transparent;
 	-webkit-text-stroke: 2px var(--primary-font-color);
 	transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 768px) {
+	.heroPage__title > span {
+		font-size: 4rem;
+	}
+}
+@media screen and (max-width: 450px) {
+	.heroPage__title {
+		place-self: end;
+	}
+	.heroPage__title > span {
+		font-size: 4rem;
+	}
 }

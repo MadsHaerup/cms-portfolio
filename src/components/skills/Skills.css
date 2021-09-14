@@ -4,18 +4,14 @@
 .skills__overview {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	place-items: center;
-	/* background-image: url("./explosion.svg");
-	background-size: 100% 100%;
-	height:100vh;
-	background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat; */
+	margin-top: 2rem;
 }
 .skills__overview__libraries {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-area: 1/2/-1/-1;
+	grid-gap: 1rem;
+	place-items: center;
 }
 .skills__overview__libraries > span > i {
 	font-size: 5rem;
@@ -25,4 +21,10 @@
 }
 .skills__header__title {
 	font-size: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+	.skills__overview {
+		display: block;
+	}
 }

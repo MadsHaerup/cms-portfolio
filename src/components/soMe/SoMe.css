@@ -23,3 +23,8 @@
 		top: 40px;
 	}
 }
+@media screen and (max-width: 450px) {
+	.soMe {
+		right: -90px;
+	}
+}
