@@ -12,6 +12,7 @@
 	font-size: 5rem;
 	transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	padding-right: 1rem;
+	margin: 0;
 }
 .heroPage__title > span {
 	font-family: "Fivo Sans Modern Heavy";
@@ -25,7 +26,14 @@
 	-webkit-text-stroke: 2px var(--primary-font-color);
 	transform-style: preserve-3d;
 }
-
+@media screen and (max-width: 1240px) {
+	.heroPage__title {
+		place-self: initial;
+	}
+	.heroPage {
+		min-height: auto;
+	}
+}
 @media screen and (max-width: 768px) {
 	.heroPage__title > span {
 		font-size: 4rem;
@@ -37,5 +45,10 @@
 	}
 	.heroPage__title > span {
 		font-size: 4rem;
+	}
+	.heroPage {
+		height: 100px;
+		position: absolute;
+		top: 50px;
 	}
 }

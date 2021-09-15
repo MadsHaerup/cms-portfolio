@@ -28,18 +28,3 @@ export default function Navbar() {
 		</nav>
 	);
 }
-
-// const NavLink = (props) => (
-// 	<a
-// 		{...props}
-// 		getProps={({ isCurrent }) => {
-// 			// the object returned here is passed to the
-// 			// anchor element's props
-// 			return {
-// 				style: {
-// 					color: isCurrent ? "#FEB300" : "var(--primary-font-color)",
-// 				},
-// 			};
-// 		}}
-// 	/>
-// );

@@ -12,7 +12,7 @@
 	grid-area: 1/1/-1/-1;
 	place-items: center;
 	min-height: 100vh;
-	height: 2000px;
+	/* height: 2000px; */
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-image: url("../../assets/img/pb.png");
@@ -40,6 +40,14 @@
 	place-items: center;
 }
 
+@media screen and (max-width: 1500px) {
+	#home {
+		place-items: initial;
+		justify-items: center;
+		min-height: auto;
+		height: 1300px;
+	}
+}
 @media screen and (max-width: 1000px) {
 	.homePage {
 		margin-left: 2rem;
@@ -63,5 +71,11 @@
 	.homePage > .projects {
 		display: flex;
 		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#home {
+		background-position: bottom;
 	}
 }

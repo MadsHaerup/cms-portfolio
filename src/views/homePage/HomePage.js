@@ -8,25 +8,25 @@ import { FollowUp } from "../../components/heropage/followup/FollowUp";
 
 export default function HomePage() {
 	return (
-		<div className="homePage">
-			<section id="home">
-				<HeroPage />
-				<FollowUp />
-			</section>
+		<>
+			<div className="homePage">
+				<section id="home">
+					<HeroPage />
+					<FollowUp />
+				</section>
 
-			<section id="about">
-				<Skills />
-			</section>
+				<section id="about">
+					<Skills />
+				</section>
 
-			<section id="projects">
-				<MyProjects />
-			</section>
+				<section id="projects">
+					<MyProjects />
+				</section>
 
-			<section id="contact">
-				<Contact />
-			</section>
-
-			{/* <Footer /> */}
-		</div>
+				<section id="contact">
+					<Contact />
+				</section>
+			</div>
+		</>
 	);
 }

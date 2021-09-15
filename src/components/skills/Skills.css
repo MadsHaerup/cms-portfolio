@@ -6,6 +6,14 @@
 	grid-template-columns: repeat(2, 1fr);
 	margin-top: 2rem;
 }
+.skills__overview__text {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+.skills__overview__text > p {
+	display: flex;
+	flex-direction: column;
+}
 .skills__overview__libraries {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
