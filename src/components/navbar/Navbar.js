@@ -17,13 +17,6 @@ export default function Navbar() {
 						<a href={item.path}>{item.title}</a>
 					</motion.li>
 				))}
-
-				<motion.li
-					className="navigationsItems__item"
-					whileHover={{ scale: 1.3, originX: 0, color: "var(--hover-color)" }}
-					transition={{ type: "spring", stiffness: 250 }}>
-					<Link to="blog">Blog</Link>
-				</motion.li>
 			</ul>
 		</nav>
 	);

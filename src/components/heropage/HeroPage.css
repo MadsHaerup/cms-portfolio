@@ -38,10 +38,15 @@
 	.heroPage__title > span {
 		font-size: 4rem;
 	}
+	.heroPage__title {
+		place-self: center;
+		margin-top: 10rem;
+	}
 }
 @media screen and (max-width: 450px) {
 	.heroPage__title {
 		place-self: end;
+		margin-top: 0;
 	}
 	.heroPage__title > span {
 		font-size: 4rem;
