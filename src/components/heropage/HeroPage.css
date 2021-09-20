@@ -49,11 +49,12 @@
 		margin-top: 0;
 	}
 	.heroPage__title > span {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 	.heroPage {
 		height: 100px;
 		position: absolute;
 		top: 50px;
+		left: 0;
 	}
 }
