@@ -50,3 +50,9 @@
 	-webkit-text-stroke: 2px var(--primary-font-color);
 	transform-style: preserve-3d;
 }
+
+@media screen and (max-width: 450px) {
+	.followUp__title > span {
+		font-size: 3rem;
+	}
+}

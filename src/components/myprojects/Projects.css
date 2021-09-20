@@ -30,3 +30,10 @@
 		grid-gap: 0.5rem;
 	}
 }
+@media screen and (max-width: 450px) {
+	.image {
+		height: 250px;
+		background-position: 0;
+		background-size: cover;
+	}
+}

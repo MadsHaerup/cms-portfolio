@@ -40,4 +40,7 @@
 	}
 }
 @media screen and (max-width: 768px) {
+	.skills__overview {
+		margin-right: 1rem;
+	}
 }

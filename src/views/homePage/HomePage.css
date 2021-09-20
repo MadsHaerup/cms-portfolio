@@ -81,5 +81,6 @@
 @media screen and (max-width: 450px) {
 	#home {
 		background-position: bottom;
+		background-image: url("../../assets/img/pbmobile.png");
 	}
 }

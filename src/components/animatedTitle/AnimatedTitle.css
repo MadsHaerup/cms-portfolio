@@ -16,6 +16,11 @@
 
 @media screen and (max-width: 450px) {
 	.words {
-		font-size: 4.5rem;
+		font-size: 3rem;
+	}
+}
+@media screen and (max-width: 360px) {
+	.words {
+		font-size: 2.5rem;
 	}
 }

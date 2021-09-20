@@ -17,3 +17,12 @@
 		grid-template-columns: 1fr;
 	}
 }
+
+@media screen and (max-width: 450px) {
+	.allprojects {
+		grid-gap: 3rem;
+	}
+	.item-wrap:nth-child(odd) {
+		direction: ltr;
+	}
+}

@@ -7,7 +7,7 @@ export const Contact = () => {
 				<a className="contact__email" href="mailto:Madshaerup@outlook.com">
 					<span>@</span> Let's Connect{" "}
 					<span>
-						<i class="fas fa-arrow-right"></i>
+						<i className="fas fa-arrow-right"></i>
 					</span>
 				</a>
 			</div>
