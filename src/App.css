@@ -1,0 +1,21 @@
+.app {
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr;
+}
+.app > div {
+	display: grid;
+	grid-area: 1/2/-1/3;
+}
+
+@media screen and (max-width: 768px) {
+	.app {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.app > div {
+		grid-area: 1/1/-1/-1;
+		display: grid;
+		place-content: unset;
+	}
+}

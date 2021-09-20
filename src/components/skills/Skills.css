@@ -1,0 +1,43 @@
+.skills__overview {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 2rem;
+}
+.skills__overview__text {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+.skills__overview__text > p {
+	display: flex;
+	flex-direction: column;
+}
+.skills__overview__libraries > img {
+	width: 700px;
+}
+.skills__overview__libraries > span > i {
+	font-size: 5rem;
+}
+
+.skills__overview__bggimage {
+}
+.skills__header__title {
+	font-size: 5rem;
+}
+
+@media screen and (max-width: 1400px) {
+	.skills__overview__libraries > img {
+		width: 100%;
+		opacity: 0.2;
+		max-height: 800px;
+	}
+	.skills__overview__libraries {
+		grid-area: 1/1/-1/-1;
+		z-index: 0;
+	}
+	.skills__overview__text {
+		grid-area: 1/1/-1/-1;
+		z-index: 1;
+	}
+}
+@media screen and (max-width: 768px) {
+}

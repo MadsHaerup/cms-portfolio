@@ -1,0 +1,17 @@
+.btn {
+	width: 50%;
+	place-self: center;
+	padding: 0.5rem 1rem;
+	background: white;
+	font-weight: 800;
+	border-radius: 10px;
+	transition: background 400ms ease-in-out;
+	border: none;
+	transition: box-shadow 180ms ease-in;
+}
+
+.btn:hover {
+	background-color: var(--hover-color);
+	/* color: var(--primary-font-color); */
+	box-shadow: 0 0 0 3px #fff;
+}

@@ -1,0 +1,19 @@
+.allprojects {
+	display: grid;
+	grid-gap: 8rem;
+}
+
+.item-wrap:nth-child(odd) {
+	direction: rtl;
+}
+.item-wrap:nth-child(even) {
+	direction: ltr;
+}
+
+@media screen and (max-width: 768px) {
+	#projects {
+		padding-right: 1rem;
+		padding-left: 1rem;
+		grid-template-columns: 1fr;
+	}
+}

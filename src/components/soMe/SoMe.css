@@ -1,0 +1,30 @@
+.soMe {
+	list-style: none;
+	display: flex;
+	position: absolute;
+	right: 1rem;
+	top: 0;
+}
+.soMe > li {
+	background-color: #000;
+	border-radius: 50%;
+	display: grid;
+	padding: 0.5rem;
+}
+.soMe > li > a {
+	color: white;
+	width: 1em;
+	height: 1em;
+	display: grid;
+}
+
+@media screen and (max-width: 768px) {
+	.soMe {
+		top: 40px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.soMe {
+		right: -90px;
+	}
+}

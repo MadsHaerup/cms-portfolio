@@ -1,0 +1,25 @@
+footer {
+	background: var(--hover-color);
+	height: 100px;
+	display: grid;
+	grid-column: 1 / span 3;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.footerList {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.footerList__item {
+	margin-right: 1.5rem;
+}
+.footerList__item__Link {
+	text-decoration: none;
+	color: #fff;
+}

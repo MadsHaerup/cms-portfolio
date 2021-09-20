@@ -1,0 +1,27 @@
+.contact {
+	max-width: 1200px;
+	padding-top: 3rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding: 4rem 1rem;
+	display: grid;
+	grid-gap: 3rem;
+}
+.contact__email {
+	text-decoration: none;
+	color: initial;
+	color: var(--primary-font-color);
+	font-size: 4rem;
+	font-weight: bold;
+	font-family: "Fivo Sans Modern Heavy";
+}
+.contact__email span {
+	color: var(--hover-color);
+}
+@media screen and (max-width: 768px) {
+	.contact {
+		padding-right: 1rem;
+		padding-left: 1rem;
+		grid-template-columns: 1fr;
+	}
+}
