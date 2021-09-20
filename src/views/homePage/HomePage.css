@@ -2,7 +2,7 @@
 	display: grid;
 }
 .homePage > section {
-	margin-bottom: 15rem;
+	margin-bottom: 5rem;
 }
 
 #home {
@@ -28,8 +28,11 @@
 	padding: 4rem 1rem;
 	display: grid;
 	grid-gap: 3rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
-#about {
+#about,
+#contact {
 	margin-left: 2rem;
 }
 .herosection {

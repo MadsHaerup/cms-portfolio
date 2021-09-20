@@ -7,7 +7,17 @@
 	display: grid;
 	grid-gap: 3rem;
 }
-
+.contact__email {
+	text-decoration: none;
+	color: initial;
+	color: var(--primary-font-color);
+	font-size: 4rem;
+	font-weight: bold;
+	font-family: "Fivo Sans Modern Heavy";
+}
+.contact__email span {
+	color: var(--hover-color);
+}
 @media screen and (max-width: 768px) {
 	.contact {
 		padding-right: 1rem;

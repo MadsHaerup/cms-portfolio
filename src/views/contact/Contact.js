@@ -1,13 +1,15 @@
 import React from "react";
-import { ContactTitle } from "../../components/animatedTitle/contactTitle/ContactTitle";
-import EmailForm from "../../components/contact/EmailForm/EmailForm";
 import "./Contact.css";
 export const Contact = () => {
 	return (
 		<div className="contact">
-			<ContactTitle />
 			<div>
-				<EmailForm />
+				<a className="contact__email" href="mailto:Madshaerup@outlook.com">
+					<span>@</span> Let's Connect{" "}
+					<span>
+						<i class="fas fa-arrow-right"></i>
+					</span>
+				</a>
 			</div>
 		</div>
 	);

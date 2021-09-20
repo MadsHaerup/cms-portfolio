@@ -11,8 +11,8 @@ export const HeroPage = () => {
 			duration: 1,
 			opacity: 1,
 			transition: {
-				delayChildren: 0.5,
-				staggerChildren: 0.5,
+				delayChildren: 0.2,
+				staggerChildren: 0.2,
 				type: "spring",
 				bounce: 1,
 			},

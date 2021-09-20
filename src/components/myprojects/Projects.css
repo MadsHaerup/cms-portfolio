@@ -24,10 +24,6 @@
 	opacity: 1;
 }
 
-.info > p {
-	padding-left: 2rem;
-}
-
 @media screen and (max-width: 768px) {
 	.item-wrap {
 		grid-template-columns: 1fr;
