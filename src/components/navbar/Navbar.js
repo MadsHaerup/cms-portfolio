@@ -1,6 +1,5 @@
 import React from "react";
 import { NavbarData } from "./NavbarData";
-import { Link } from "@reach/router";
 import "./Navbar.css";
 import { motion } from "framer-motion";
 
