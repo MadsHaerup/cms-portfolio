@@ -31,7 +31,7 @@ export const Skills = () => {
 					<p>..and a lot more tools...</p>
 				</div>
 				<div className="skills__overview__libraries">
-					<img src={img} alt="" />
+					<img src={img} alt="color explosion" loading="lazy" />
 				</div>
 			</div>
 		</div>
