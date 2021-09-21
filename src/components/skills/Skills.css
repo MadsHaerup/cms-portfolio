@@ -1,6 +1,6 @@
 .skills__overview {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr 1fr;
 	margin-top: 2rem;
 }
 .skills__overview__text {
@@ -12,7 +12,8 @@
 	flex-direction: column;
 }
 .skills__overview__libraries > img {
-	width: 700px;
+	height: 100%;
+	width: 100%;
 }
 .skills__overview__libraries > span > i {
 	font-size: 5rem;
@@ -42,5 +43,13 @@
 @media screen and (max-width: 768px) {
 	.skills__overview {
 		margin-right: 1rem;
+	}
+}
+@media screen and (max-width: 450px) {
+	.skills__overview {
+		grid-template-columns: 1fr;
+	}
+	.skills__overview__libraries {
+		display: none;
 	}
 }

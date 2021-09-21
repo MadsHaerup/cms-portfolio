@@ -28,7 +28,7 @@ export const Skills = () => {
 					<p>
 						Headless-CMS: <span>Strapi, Sanity.io and CosmisJS</span>{" "}
 					</p>
-					<p>..and a lot more tools...</p>
+					<p>and a lot more tools...</p>
 				</div>
 				<div className="skills__overview__libraries">
 					<img src={img} alt="color explosion" loading="lazy" />

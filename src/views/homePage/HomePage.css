@@ -7,7 +7,7 @@
 
 #home {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-area: 1/1/-1/-1;
 	place-items: center;
@@ -82,5 +82,11 @@
 	#home {
 		background-position: bottom;
 		background-image: url("../../assets/img/pbmobile.png");
+	}
+
+	#about,
+	#contact,
+	#projects {
+		margin-left: 1rem;
 	}
 }
