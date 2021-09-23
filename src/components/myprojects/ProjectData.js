@@ -1,6 +1,6 @@
 export const ProjectData = [
 	{
-		imageUrl: "https://i.ibb.co/R4T8jH7/figma.png",
+		imageUrl: "https://i.ibb.co/LPRbYnY/figma-Conf.webp",
 		id: 1,
 		title: "Figma Conference Landing Page",
 		description: "A landing page for a fictional event. Created with React and SASS",
@@ -8,7 +8,7 @@ export const ProjectData = [
 		github: "https://github.com/rts-cmk-wu04/africa-figma-event-MadsHaerup",
 	},
 	{
-		imageUrl: "https://i.ibb.co/1ztvk0L/sports.png",
+		imageUrl: "https://i.ibb.co/pXdpyRp/sportsapp.webp",
 		id: 2,
 		title: "Sport App Landing Page",
 		description:
@@ -17,7 +17,7 @@ export const ProjectData = [
 		github: "https://github.com/MadsHaerup/sports",
 	},
 	{
-		imageUrl: "https://i.ibb.co/9NfNWgS/dappy.png",
+		imageUrl: "https://i.ibb.co/mzPzRvC/dappywallet.webp",
 		id: 3,
 		title: "Crypto Landing Page",
 		description:
@@ -26,7 +26,7 @@ export const ProjectData = [
 		github: "https://github.com/rts-cmk-wu04/dappy-crypto-currency-MadsHaerup",
 	},
 	{
-		imageUrl: "https://i.ibb.co/s1SVgH8/recipeplanetphoto.png",
+		imageUrl: "https://i.ibb.co/jDdthjM/recipeplanet.webp",
 		id: 4,
 		title: "Recipe Planet",
 		description:
