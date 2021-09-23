@@ -1,9 +1,15 @@
 import "./HomePage.css";
-import { Skills } from "../../components/skills/Skills";
-import MyProjects from "../../components/myprojects/MyProjects";
-import { Contact } from "../contact/Contact";
-import { HeroPage } from "../../components/heropage/HeroPage";
-import { FollowUp } from "../../components/heropage/followup/FollowUp";
+import loadable from "@loadable/component";
+// import { Skills } from "../../components/skills/Skills";
+// import MyProjects from "../../components/myprojects/MyProjects";
+// import { Contact } from "../contact/Contact";
+// import { HeroPage } from "../../components/heropage/HeroPage";
+// import { FollowUp } from "../../components/heropage/followup/FollowUp";
+const HeroPage = loadable(() => import("../../components/heropage/HeroPage"));
+const Contact = loadable(() => import("../contact/Contact"));
+const MyProjects = loadable(() => import("../../components/myprojects/MyProjects"));
+const Skills = loadable(() => import("../../components/skills/Skills"));
+const FollowUp = loadable(() => import("../../components/heropage/followup/FollowUp"));
 
 export default function HomePage() {
 	return (

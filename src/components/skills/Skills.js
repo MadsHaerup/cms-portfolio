@@ -3,7 +3,7 @@ import { AnimatedTitle } from "../animatedTitle/AnimatedTitle";
 import "./Skills.css";
 import img from "./explosion.svg";
 
-export const Skills = () => {
+const Skills = () => {
 	return (
 		<div className="skills">
 			<AnimatedTitle />
@@ -37,3 +37,5 @@ export const Skills = () => {
 		</div>
 	);
 };
+
+export default Skills;

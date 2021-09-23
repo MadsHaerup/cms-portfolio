@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./FollowUp.css";
 
-export const FollowUp = () => {
+const FollowUp = () => {
 	const { ref, inView } = useInView({ threshold: 0.5 });
 	const container = {
 		hidden: { opacity: 0 },
@@ -45,3 +45,5 @@ export const FollowUp = () => {
 		</>
 	);
 };
+
+export default FollowUp;
