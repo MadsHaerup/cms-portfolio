@@ -14,7 +14,7 @@
 	min-height: 100vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-image: url("../../assets/img/pb.png");
+	background-image: url("https://i.ibb.co/F5dcLTF/pb600x800.png");
 	background-size: contain;
 	background-position: 80% bottom;
 }
@@ -81,7 +81,7 @@
 @media screen and (max-width: 450px) {
 	#home {
 		background-position: bottom;
-		background-image: url("../../assets/img/pbmobile.png");
+		background-image: url("https://i.ibb.co/7bR6k3D/pbmobile375x500.png");
 	}
 
 	#about,

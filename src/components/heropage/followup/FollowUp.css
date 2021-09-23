@@ -2,6 +2,7 @@
 	min-height: 100vh;
 	display: grid;
 	grid-area: 2/1/2/2;
+	width: 100%;
 }
 .followUp__title {
 	display: flex;
@@ -13,6 +14,7 @@
 	font-size: 5rem;
 	transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	padding-right: 1rem;
+	max-width: 400px;
 }
 .followUp__cta {
 	place-self: center;

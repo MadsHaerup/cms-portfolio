@@ -1,5 +1,4 @@
 import "./HomePage.css";
-// import Footer from "../../components/footer/Footer";
 import { Skills } from "../../components/skills/Skills";
 import MyProjects from "../../components/myprojects/MyProjects";
 import { Contact } from "../contact/Contact";
