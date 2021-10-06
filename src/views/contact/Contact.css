@@ -16,7 +16,7 @@
 	font-family: "Fivo Sans Modern Heavy";
 }
 .contact__email span {
-	color: var(--hover-color);
+	color: #feb300;
 }
 @media screen and (max-width: 768px) {
 	.contact {

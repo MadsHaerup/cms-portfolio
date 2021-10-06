@@ -1,22 +1,11 @@
 .homePage {
 	display: grid;
 }
-.homePage > section {
-	margin-bottom: 5rem;
-}
 
 #home {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
-	grid-template-rows: 1fr 1fr;
 	grid-area: 1/1/-1/-1;
 	place-items: center;
-	min-height: 100vh;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-image: url("../../assets/images/pb600x800-Web-P.webp");
-	background-size: contain;
-	background-position: 80% bottom;
 }
 
 #projects {
@@ -28,12 +17,15 @@
 	padding: 4rem 1rem;
 	display: grid;
 	grid-gap: 3rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
+	padding-left: 2rem;
+	place-self: center;
 }
 #about,
 #contact {
-	margin-left: 2rem;
+	padding-left: 2rem;
+	place-items: center;
+	padding-left: 2rem;
+	display: grid;
 }
 .herosection {
 	display: grid;
@@ -44,49 +36,15 @@
 	place-items: center;
 }
 
-@media screen and (max-width: 1500px) {
-	#home {
-		place-items: initial;
-		justify-items: center;
-		min-height: auto;
-		height: 1300px;
-	}
-}
-@media screen and (max-width: 1000px) {
-	.homePage {
-		margin-left: 2rem;
-	}
-	#home {
-		grid-template-columns: 1fr;
-		background-position: center;
-		height: auto;
-	}
-}
-
 @media screen and (max-width: 768px) {
 	.homePage {
 		margin-left: 0;
 	}
 	.homePage > section:first-of-type {
-		background-size: cover;
-		background-position: center center;
 		grid-template-columns: 1fr;
 	}
 	.homePage > .projects {
 		display: flex;
 		flex-direction: column;
-	}
-}
-
-@media screen and (max-width: 450px) {
-	#home {
-		background-position: bottom;
-		background-image: url("../../assets/images/pbmobile375x500-Web-P.webp");
-	}
-
-	#about,
-	#contact,
-	#projects {
-		margin-left: 1rem;
 	}
 }

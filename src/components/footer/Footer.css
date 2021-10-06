@@ -1,6 +1,6 @@
 footer {
-	background: var(--hover-color);
-	height: 100px;
+	background-color: #16252d;
+	height: 50vh;
 	display: grid;
 	grid-column: 1 / span 3;
 	position: relative;
@@ -19,7 +19,16 @@ footer {
 .footerList__item {
 	margin-right: 1.5rem;
 }
+.footerList__item__Link:hover {
+	color: var(--hover-color);
+}
 .footerList__item__Link {
 	text-decoration: none;
 	color: #fff;
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+}
+.footerList__item__Link__name {
+	padding-right: 0.5rem;
 }
