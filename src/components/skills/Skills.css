@@ -1,3 +1,6 @@
+.skills {
+	max-width: 1000px;
+}
 .skills__overview {
 	display: grid;
 	grid-template-columns: 1fr 1fr;

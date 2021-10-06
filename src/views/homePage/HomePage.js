@@ -1,18 +1,16 @@
 import "./HomePage.css";
 import loadable from "@loadable/component";
-const HeroPage = loadable(() => import("../../components/heropage/HeroPage"));
+import { Introduction } from "../../components/introduction/Introduction";
 const Contact = loadable(() => import("../contact/Contact"));
 const MyProjects = loadable(() => import("../../components/myprojects/MyProjects"));
 const Skills = loadable(() => import("../../components/skills/Skills"));
-const FollowUp = loadable(() => import("../../components/heropage/followup/FollowUp"));
 
 export default function HomePage() {
 	return (
 		<>
 			<div className="homePage">
 				<section id="home">
-					<HeroPage />
-					<FollowUp />
+					<Introduction />
 				</section>
 
 				<section id="about">
