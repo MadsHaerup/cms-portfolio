@@ -42,13 +42,10 @@
 :root {
 	--primary-bg-color: #040404;
 	--secondary-bg-color: #ffffff;
-	/* --secondary-bg-color: #0c0f0a; */
 	--third-bg-color: #000;
 	--primary-font-color: #2f1829;
-	/* --primary-font-color: #eef0f2; */
 	--secondary-fontColor: rgba(255, 255, 255, 0.7);
 	--link-font-color: #fff5d7;
-	/* --hover-color: #104f55; */
 	--hover-color: #2ac780;
 	--bgFont: "Zilla Slab Highlight", cursive;
 	--MonotonFont: "Monoton", cursive;
